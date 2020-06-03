@@ -21,7 +21,7 @@
     }
     
     var adv = document.getElementsByClassName("Pc-feedAd-container");
-     for(var i = 0;i < obj.length; i++){
-         adv[i].style.display = "none";
+     for(var j = 0;j < adv.length; j++){
+         adv[j].style.display = "none";
      }
 })();
