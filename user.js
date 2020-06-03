@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         知乎Fxxk
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  移除知乎故事档案局的回答
 // @author       SHIFU
 // @grant        none
@@ -19,4 +19,9 @@
             obj[i].style.display = "none";
         }
     }
+    
+    var adv = document.getElementsByClassName("Pc-feedAd-container");
+     for(var i = 0;i < obj.length; i++){
+         adv[i].style.display = "none";
+     }
 })();
