@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         知乎Fxxk
 // @namespace    http://tampermonkey.net/
-// @version      1.2.1
+// @version      1.3
 // @description  移除知乎故事档案局的回答
 // @author       SHIFU
 // @grant        none
