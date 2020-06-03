@@ -5,7 +5,7 @@
 // @description  移除知乎故事档案局的回答
 // @author       SHIFU
 // @grant        none
-// @match        *.zhihu.com/*
+// @match        www.zhihu.com/*
 
 // ==/UserScript==
 
