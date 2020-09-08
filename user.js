@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         知乎Fxxk
-// @namespace    http://tampermonkey.net/
-// @version      1.8
+// @version      1.9
+// @namespace    undefined
 // @description  移除知乎官方的回答,推荐页广告
 // @author       SHIFU
 // @grant        none
-// @match        www.zhihu.com/*
+// @match        *://www.zhihu.com/*
 
 // ==/UserScript==
 (function() {
