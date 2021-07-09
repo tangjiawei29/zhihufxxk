@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         知乎Fxxk
-// @version      2.0
+// @version      2.1
 // @namespace    undefined
 // @description  移除知乎官方的回答,推荐页广告,回答页中广告
 // @author       SHIFU
@@ -20,6 +20,11 @@
     setInterval(function(){
         var obj = document.getElementsByClassName("ContentItem AnswerItem");
         for(var i = 0;i < obj.length; i++){
+            if( obj[i].innerHTML.indexOf("本回答节选自盐选专栏，有助于解答该问题")>=0) {
+                 obj[i].style.display = "none";
+               // console.log(obj[i].innerHTML);
+                continue;
+            }
             var trashNode=obj[i].attributes["data-zop"].value;
             try {
                 var jsonObject= JSON.parse(trashNode);
